@@ -4,20 +4,19 @@ from enum import Enum
 from pathlib import Path
 
 CARDS_RANKING = {
-    "1": "a",
-    "2": "b",
-    "3": "c",
-    "4": "d",
-    "5": "e",
-    "6": "f",
-    "7": "g",
-    "8": "h",
-    "9": "i",
-    "T": "j",
-    "J": "k",
-    "Q": "l",
-    "K": "m",
-    "A": "n",
+    "2": "a",
+    "3": "b",
+    "4": "c",
+    "5": "d",
+    "6": "e",
+    "7": "f",
+    "8": "g",
+    "9": "h",
+    "T": "i",
+    "J": "j",
+    "Q": "k",
+    "K": "l",
+    "A": "m",
 }
 class HandType(Enum):
     FIVE = 7
