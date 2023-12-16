@@ -38,7 +38,7 @@ if __name__ == "__main__":
         if "-".join(data) in cache:
             init = cache["-".join(data)]
             delta = i - init
-            shift = (((100000000 + init) % delta) - init) % delta
+            shift = (100000000 - init) % delta + init
             for k, v in cache.items():
                 if v == 104:
                     final = k.split("-")
