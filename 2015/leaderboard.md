@@ -1,5 +1,8 @@
         --------Part 1---------   --------Part 2--------
     Day     Time    Rank  Score       Time   Rank  Score
+    23      >24h    9039      0       >24h   8995      0
+    21      >24h    9854      0       >24h   9646      0
+    20      >24h   10858      0       >24h  10216      0
     19      >24h   11984      0       >24h   9161      0
     18      >24h   12610      0       >24h  12452      0
     17      >24h   13184      0       >24h  12963      0
@@ -19,3 +22,7 @@
     3       >24h   54483      0       >24h  50439      0
     2       >24h   66828      0       >24h  60756      0
     1       >24h  105413      0       >24h  87548      0
+
+
+Day 20 is so unefficient: almost 20sec to run. But it works, and it is still reasonable.
+Day 22 is still a total mess at this point.
