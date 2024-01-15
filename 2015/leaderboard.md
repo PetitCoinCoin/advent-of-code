@@ -1,6 +1,9 @@
         --------Part 1---------   --------Part 2--------
     Day     Time    Rank  Score       Time   Rank  Score
+    25      >24h    9231      0       >24h   6702      0
+    24      >24h    7828      0       >24h   7725      0
     23      >24h    9039      0       >24h   8995      0
+    22      >24h    7582      0       >24h   7384      0
     21      >24h    9854      0       >24h   9646      0
     20      >24h   10858      0       >24h  10216      0
     19      >24h   11984      0       >24h   9161      0
@@ -25,4 +28,8 @@
 
 
 Day 20 is so unefficient: almost 20sec to run. But it works, and it is still reasonable.
-Day 22 is still a total mess at this point.
+Finally managed to get day 22! It took me long enough. Sure, part 2 takes almost 20sec tu run, but hey! it works \o/
+And with this one, I get the final stars to turn on the Weather Machine and see the snow falling. And artwork is so cute <3
+
+Overall, it was way easier than 2023. I was about to add "except for day 22", but it is still simple
+bruteforce (well, I handled it that way). You just need to pay attention to a lot of details.
