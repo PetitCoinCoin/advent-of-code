@@ -84,7 +84,7 @@ class Game:
             return
         self.mana -= spell.cost
         self.total += spell.cost
-        if self.mana <= 0:
+        if self.mana < 0:
             # Can't afford spell
             self.result = 0
             return
