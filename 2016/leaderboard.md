@@ -1,5 +1,9 @@
         --------Part 1---------   --------Part 2--------
-    Day     Time    Rank  Score       Time   Rank  Score
+    Day     Time   Rank   Score      Time   Rank   Score
+    19      >24h   7289      0       >24h   6223      0
+    18      >24h   7164      0       >24h   7119      0
+    17      >24h   6629      0       >24h   6493      0
+    16      >24h   7665      0       >24h   7453      0
     15      >24h   7483      0       >24h   7432      0
     14      >24h   7664      0       >24h   7382      0
     13      >24h   7844      0       >24h   7534      0
@@ -22,3 +26,5 @@ Day 11 was my first real struggle for this year. I tried a BFS approach, which w
 Not a big fan of day 12 use of data structure, but it works.
 
 Proud of me on day 13 because I finally managed to implement Dijkstra algorithm on my own, without having to check at notes or previous scripts. I guess both parts could have use BFS, but even if I did not take advantage of part 1 for part 2, I'm happy with my two algorithms.
+
+I thought there would be a trick for day 18 - part 2. I tried to see if a pattern appeared among the 40k rows, but it does not look like it. So I'll stay with my bruteforce solution.
