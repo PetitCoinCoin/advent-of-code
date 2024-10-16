@@ -1,5 +1,6 @@
         --------Part 1---------   --------Part 2--------
     Day     Time   Rank  Score       Time   Rank  Score
+    24      >24h   5076      0       >24h   5046      0
     23      >24h   5624      0       >24h   5349      0
     22      >24h   6287      0       >24h   5018      0
     21      >24h   6456      0       >24h   6138      0
@@ -34,3 +35,5 @@ Proud of me on day 13 because I finally managed to implement Dijkstra algorithm 
 I thought there would be a trick for day 18 - part 2. I tried to see if a pattern appeared among the 40k rows, but it does not look like it. So I'll stay with my bruteforce solution.
 
 Day 22 part 2 solved "manually" by looking at data.
+
+I'm glad I found this "double BFS" which allowed me to solve part 1 with reasonnable amount of run time. Part 2 is clearly not optimal, but less than 2 minutes is still fine!
