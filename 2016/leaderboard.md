@@ -1,5 +1,6 @@
         --------Part 1---------   --------Part 2--------
     Day     Time   Rank  Score       Time   Rank  Score
+    25      >24h   5221      0       >24h   4604      0
     24      >24h   5076      0       >24h   5046      0
     23      >24h   5624      0       >24h   5349      0
     22      >24h   6287      0       >24h   5018      0
@@ -36,4 +37,4 @@ I thought there would be a trick for day 18 - part 2. I tried to see if a patter
 
 Day 22 part 2 solved "manually" by looking at data.
 
-I'm glad I found this "double BFS" which allowed me to solve part 1 with reasonnable amount of run time. Part 2 is clearly not optimal, but less than 2 minutes is still fine!
+I'm glad I found this "double BFS" which allowed me to solve day 24 part 1 with reasonnable amount of run time. Part 2 is clearly not optimal, but less than 2 minutes is still fine!

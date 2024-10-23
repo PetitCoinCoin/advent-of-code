@@ -19,4 +19,5 @@
 
 Day 13: first day of 2017 where it takes a little bit loo long. But a little bit more than a minute is still correct.
 Then I realised I did not need all the part one treatment and escaped loop early: down to a couple of seconds!
+
 Day 15: clearly not optimised, but runs in less than 1 minute for part one (especially when you realise it is  40 millions loops, and not 40 billions -_-)
