@@ -1,5 +1,7 @@
         --------Part 1---------   --------Part 2--------
     Day     Time   Rank  Score       Time   Rank  Score
+    18      >24h  12042      0       >24h  10216      0
+    17      >24h  12631      0       >24h  11959      0
     16      >24h  13442      0       >24h  12383      0
     15      >24h  13700      0       >24h  13362      0
     14      >24h  12769      0       >24h  11976      0
@@ -21,3 +23,10 @@ Day 13: first day of 2017 where it takes a little bit loo long. But a little bit
 Then I realised I did not need all the part one treatment and escaped loop early: down to a couple of seconds!
 
 Day 15: clearly not optimised, but runs in less than 1 minute for part one (especially when you realise it is  40 millions loops, and not 40 billions -_-)
+
+Day 17: I tried to find a pattern to calculate second item in list, without success. Then I realised I did not have to 
+actually build the list, so I decreased algorithmic complexity by keeping track of only the second value in list. Went down
+to less than 10 sec.
+
+Day 18 looked awfully like assembunny code. So I tried to look at it like last year's advent and understand what it does. Worked for part 1. But then,
+I just had to implement the full program.
