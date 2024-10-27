@@ -1,5 +1,6 @@
         --------Part 1---------   --------Part 2--------
     Day     Time   Rank  Score       Time   Rank  Score
+    22      >24h   8901      0       >24h   8735      0
     21      >24h   8439      0       >24h   8340      0
     20      >24h  10489      0       >24h   9829      0
     19      >24h  11002      0       >24h  10871      0
@@ -37,3 +38,5 @@ Worked for part 1. But then, I just had to implement the full program.
 
 I'm proud of me on day 21: first idea was the good one. Instead of flipping and rotating each sub-matrix, I only rotated
 and flipped rules once, and stored them directly in a dict. This is faster than manipulating matrices.
+
+Day 22 is probably not optimized because part 2 takes few seconds. But it works, I found a solution quickly, and I think it is elegant with complex numbers, so I'm happy.
