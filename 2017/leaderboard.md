@@ -1,5 +1,7 @@
         --------Part 1---------   --------Part 2--------
     Day     Time   Rank  Score       Time   Rank  Score
+    24      >24h   8050      0       >24h   7959      0
+    23      >24h   8945      0       >24h   7814      0
     22      >24h   8901      0       >24h   8735      0
     21      >24h   8439      0       >24h   8340      0
     20      >24h  10489      0       >24h   9829      0
@@ -40,3 +42,7 @@ I'm proud of me on day 21: first idea was the good one. Instead of flipping and 
 and flipped rules once, and stored them directly in a dict. This is faster than manipulating matrices.
 
 Day 22 is probably not optimized because part 2 takes few seconds. But it works, I found a solution quickly, and I think it is elegant with complex numbers, so I'm happy.
+
+Had to look for a hint on day 23 part 2. I had the global loop architecture, but did not manage to understand that it was looking for non prime numbers. Once understood, this is pretty straight forward.
+
+Day 24: probably not optimized, but less than 5 seconds seems fine to me.
