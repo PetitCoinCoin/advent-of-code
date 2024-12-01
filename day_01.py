@@ -1,5 +1,6 @@
 import argparse
 
+from collections import Counter
 from pathlib import Path
 from time import time
 
@@ -20,9 +21,17 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
-        data = file.read()
+        data = file.read().split("\n")
+    left = [int(row.split("   ")[0]) for row in data]
+    right = [int(row.split("   ")[1]) for row in data ]
     if args.part == 1:
-        print(data)
+        left.sort()
+        right.sort()
+        print(sum([abs(l - r) for l, r in zip(left, right)]))
     else:
-        raise NotImplementedError
+        right_count = Counter(right)
+        similarity = 0
+        for l in left:
+            similarity += l * right_count.get(l, 0)
+        print(similarity)
     print(time() - t)
