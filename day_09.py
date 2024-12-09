@@ -34,29 +34,28 @@ def move(*, is_part_two: bool = False) -> tuple:
 
 def rearrange_p1() -> list:
     raw, _, _ = move()
-    res = []
     i = 0
     j = len(raw) - 1
     while j > i:
         if raw[i] == ".":
-            res.append(raw[j])
+            raw[i] = raw[j]
             j -= 1
             while raw[j] == ".":
                 j -= 1
-        else:
-            res.append(raw[i])
         i += 1
-    if raw[i] != ".":
-        res.append(raw[i])
-    return res
+    return raw[:i + 1]
 
 def rearrange_p2() -> list:
     raw, free_spaces, files = move(is_part_two=True)
-    while files:
+    is_done = False
+    while files and not is_done:
         file_id, file_idx, file_count = files.pop()
         for i, free_space in enumerate(free_spaces):
             free_idx, free_count = free_space
-            if free_count >= file_count and free_idx < file_idx:
+            if free_idx > file_idx:
+                is_done = True
+                break
+            if free_count >= file_count:
                 raw[free_idx: free_idx + file_count] = [file_id] * file_count
                 raw[file_idx: file_idx + file_count] = ["."] * file_count
                 free_spaces[i] = (free_idx + file_count, free_count - file_count)

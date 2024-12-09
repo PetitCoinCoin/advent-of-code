@@ -22,4 +22,4 @@ Lost so much time on Day 7 part 1 because I used a dict to store the input, but 
 
 I was afraid that it would take forever for Day 8 with permutations, but it runs in no time!
 
-Day 9: like day 7, poor choice of data structure (str instead of list) lead to wrong answer and lots of time wasted! Probably not optimal as part 2 runs in about 5sec, but that will do.
+Day 9: like day 7, poor choice of data structure (str instead of list) lead to wrong answer and lots of time wasted! Probably not optimal as part 2 runs in about 5sec, but that will do. Edit: optimised with early breaking, now runs in about a sec.
