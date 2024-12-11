@@ -4,6 +4,7 @@ Tried to be ready at 6am for day 3 and 4, but that's too early for me, I'd rathe
 
           --------Part 1--------   --------Part 2--------
     Day       Time   Rank  Score       Time   Rank  Score
+      11  00:38:12   8290      0   01:14:01   5612      0
       10  00:13:38   1732      0   00:23:53   2789      0
       9   00:43:26   5544      0   02:42:30   7468      0
       8   01:37:25   9351      0   01:40:57   8232      0
@@ -24,3 +25,5 @@ Lost so much time on Day 7 part 1 because I used a dict to store the input, but 
 I was afraid that it would take forever for Day 8 with permutations, but it runs in no time!
 
 Day 9: like day 7, poor choice of data structure (str instead of list) lead to wrong answer and lots of time wasted! Probably not optimal as part 2 runs in about 5sec, but that will do. Edit: optimised with early breaking, now runs in about a sec.
+
+Day 11: Thought I was clever using a linked list, except that it doesn't make any sense here. A shower later, my thought were in place and used a simple and wey more efficient approach.
