@@ -3,7 +3,8 @@ Ready to find the Chief Historian: https://adventofcode.com/2024
 Tried to be ready at 6am for day 3 and 4, but that's too early for me, I'd rather sleep XD.
 
           --------Part 1--------   --------Part 2--------
-    Day       Time   Rank  Score       Time   Rank  Score
+     Day      Time   Rank  Score       Time   Rank  Score
+      12  03:39:33  13616      0   04:25:33   7707      0
       11  00:38:12   8290      0   01:14:01   5612      0
       10  00:13:38   1732      0   00:23:53   2789      0
       9   00:43:26   5544      0   02:42:30   7468      0
