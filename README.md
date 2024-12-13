@@ -4,6 +4,7 @@ Tried to be ready at 6am for day 3 and 4, but that's too early for me, I'd rathe
 
           --------Part 1--------   --------Part 2--------
      Day      Time   Rank  Score       Time   Rank  Score
+      13  00:31:56   3512      0   00:33:45   1263      0
       12  03:39:33  13616      0   04:25:33   7707      0
       11  00:38:12   8290      0   01:14:01   5612      0
       10  00:13:38   1732      0   00:23:53   2789      0
