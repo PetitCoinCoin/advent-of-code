@@ -27,24 +27,19 @@ class Machine:
     xp: int = 0
     yp: int = 0
 
-def parse_input(raw: str, m: Machine, *, is_part_two: bool) -> Machine:
-    button_pattern = r"Button (\w): X\+(\d+), Y\+(\d+)"
-    prize_pattern = r"Prize: X=(\d+), Y=(\d+)"
-    matched = re.findall(button_pattern, raw)
-    if not matched:
-        matched = re.findall(prize_pattern, raw)
-        m.xp = int(matched[0][0])
-        m.yp = int(matched[0][1])
-        if is_part_two:
-            m.xp += 10000000000000
-            m.yp += 10000000000000
-    else:
-        if matched[0][0] == "A":
-            m.xa = int(matched[0][1])
-            m.ya = int(matched[0][2])
-        else:
-            m.xb = int(matched[0][1])
-            m.yb = int(matched[0][2])
+def parse_input(raw: str, *, is_part_two: bool) -> Machine:
+    digits = re.findall(r"(\d+)", raw)
+    m = Machine(
+        xa=int(digits[0]),
+        ya=int(digits[1]),
+        xb=int(digits[2]),
+        yb=int(digits[3]),
+        xp=int(digits[4]),
+        yp=int(digits[5]),
+    )
+    if is_part_two:
+        m.xp += 10000000000000
+        m.yp += 10000000000000
     return m
 
 def solve(m: Machine, *, is_part_two: bool) -> int:
@@ -64,15 +59,7 @@ def solve(m: Machine, *, is_part_two: bool) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    data = []
     with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
-        m = Machine()
-        while line := file.readline():
-            if not line.strip():
-                data.append(m)
-                m = Machine()
-                continue
-            parse_input(line, m, is_part_two=args.part == 2)
-        data.append(m)
+        data = [parse_input(lines, is_part_two=args.part == 2) for lines in file.read().split("\n\n")]
     print(sum(solve(m, is_part_two= args.part == 2) for m in data))
     print(time() - t)
