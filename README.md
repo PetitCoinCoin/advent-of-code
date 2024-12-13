@@ -1,24 +1,55 @@
-Ready to find the Chief Historian: https://adventofcode.com/2024
+## Ready to find the Chief Historian: https://adventofcode.com/2024
 
-Tried to be ready at 6am for day 3 and 4, but that's too early for me, I'd rather sleep XD.
+<!-- AOC TILES BEGIN -->
+<h1 align="center">
+  2024 - 26 ⭐ - Python
+</h1>
+<a href="day_01.py">
+  <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
+</a>
+<a href="day_02.py">
+  <img src=".aoc_tiles/tiles/2024/02.png" width="161px">
+</a>
+<a href="day_03.py">
+  <img src=".aoc_tiles/tiles/2024/03.png" width="161px">
+</a>
+<a href="day_04.py">
+  <img src=".aoc_tiles/tiles/2024/04.png" width="161px">
+</a>
+<a href="day_05.py">
+  <img src=".aoc_tiles/tiles/2024/05.png" width="161px">
+</a>
+<a href="day_06.py">
+  <img src=".aoc_tiles/tiles/2024/06.png" width="161px">
+</a>
+<a href="day_07.py">
+  <img src=".aoc_tiles/tiles/2024/07.png" width="161px">
+</a>
+<a href="day_08.py">
+  <img src=".aoc_tiles/tiles/2024/08.png" width="161px">
+</a>
+<a href="day_09.py">
+  <img src=".aoc_tiles/tiles/2024/09.png" width="161px">
+</a>
+<a href="day_10.py">
+  <img src=".aoc_tiles/tiles/2024/10.png" width="161px">
+</a>
+<a href="day_11.py">
+  <img src=".aoc_tiles/tiles/2024/11.png" width="161px">
+</a>
+<a href="day_12.py">
+  <img src=".aoc_tiles/tiles/2024/12.png" width="161px">
+</a>
+<a href="day_13.py">
+  <img src=".aoc_tiles/tiles/2024/13.png" width="161px">
+</a>
+<!-- AOC TILES END -->
 
-          --------Part 1--------   --------Part 2--------
-     Day      Time   Rank  Score       Time   Rank  Score
-      13  00:31:56   3512      0   00:33:45   1263      0
-      12  03:39:33  13616      0   04:25:33   7707      0
-      11  00:38:12   8290      0   01:14:01   5612      0
-      10  00:13:38   1732      0   00:23:53   2789      0
-      9   00:43:26   5544      0   02:42:30   7468      0
-      8   01:37:25   9351      0   01:40:57   8232      0
-      7   06:00:26  24115      0   06:04:53  21677      0
-      6   02:04:51  15057      0   03:38:38  11355      0
-      5   01:23:25  13101      0   03:55:07  18792      0
-      4   00:24:42   5111      0   00:33:23   3970      0
-      3   00:10:36   4490      0   00:15:30   2437      0
-      2   01:06:20  14899      0   02:07:55  14059      0
-      1   02:35:21  15785      0   02:38:15  14712      0
+<hr>
 
 Wanted something clever for day 2 part 2, but went for bruteforce anyway because it's faster (well, for now).
+
+Tried to be ready at 6am for day 3 and 4, but that's too early for me, I'd rather sleep XD.
 
 Again, wanted something clever for day 6 part 2, but I didn't get the correct answer. So I went for pure bruteforce, which took me more than 3minutes (but I got the correct answer). Still, I'm sure something clever should work, so I reworked this. I'm now stuck with a "clever bruteforce": I just narrowed the number of possibilities, so it now takes around 7sec to run. I thought I could change the algorithm but realized there were several configurations that I couldn't anticipate as loops (well, at least I'm not able to do it).
 
@@ -29,3 +60,7 @@ I was afraid that it would take forever for Day 8 with permutations, but it runs
 Day 9: like day 7, poor choice of data structure (str instead of list) lead to wrong answer and lots of time wasted! Probably not optimal as part 2 runs in about 5sec, but that will do. Edit: optimised with early breaking, now runs in about a sec.
 
 Day 11: Thought I was clever using a linked list, except that it doesn't make any sense here. A shower later, my thought were in place and used a simple and wey more efficient approach.
+
+<hr>
+
+Tiles by [LiquidFun](https://github.com/LiquidFun/aoc_tiles)
