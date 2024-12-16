@@ -2,7 +2,7 @@
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2024 - 30 ⭐ - Python
+  2024 - 32 ⭐ - Python
 </h1>
 <a href="day_01.py">
   <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
@@ -49,6 +49,9 @@
 <a href="day_15.py">
   <img src=".aoc_tiles/tiles/2024/15.png" width="161px">
 </a>
+<a href="day_16.py">
+  <img src=".aoc_tiles/tiles/2024/16.png" width="161px">
+</a>
 <!-- AOC TILES END -->
 
 <hr>
@@ -68,6 +71,8 @@ Day 9: like day 7, poor choice of data structure (str instead of list) lead to w
 Day 11: Thought I was clever using a linked list, except that it doesn't make any sense here. A shower later, my thought were in place and used a simple and wey more efficient approach.
 
 Day 14 part 2 was a mess. Tried to look for a global symmetrical pattern, didn't work. Then I looked for a frame, but again, I thought there would be no more noise left, so I didn't get it write. I had an upper bound (by submitting random answers) so I just printed all grids and looked at them... to find a tree after 140k sec, which was too high. But at least, I knew what I was searching for, so it was easier to implement something.
+
+Day 16 part 2 could be better. But it took me a while and runs in about 10sec, so that's it for me today!
 
 <hr>
 
