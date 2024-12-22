@@ -2,7 +2,7 @@
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2024 - 42 ⭐ - Python
+  2024 - 44 ⭐ - Python
 </h1>
 <a href="day_01.py">
   <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
@@ -67,6 +67,9 @@
 <a href="day_21.py">
   <img src=".aoc_tiles/tiles/2024/21.png" width="161px">
 </a>
+<a href="day_22.py">
+  <img src=".aoc_tiles/tiles/2024/22.png" width="161px">
+</a>
 <!-- AOC TILES END -->
 
 <hr>
@@ -92,6 +95,8 @@ Day 16 part 2 could be better. But it took me a while and runs in about 10sec, s
 Day 19: lost about 40min for part 2 because I handled an additional new line at the end of my input ><.
 
 Day 21: took me a while to figure out what to cache and how to do it properly.
+
+Day 22: I should check for other solutions because it takes too long to run (5sec for part 1, 20sec for part 2). Fine to get stars during the busy days, but it could surely be done more efficiently.
 
 <hr>
 
