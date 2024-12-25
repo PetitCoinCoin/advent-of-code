@@ -2,7 +2,7 @@
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2024 - 46 ⭐ - Python
+  2024 - 50 ⭐ - Python
 </h1>
 <a href="day_01.py">
   <img src=".aoc_tiles/tiles/2024/01.png" width="161px">
@@ -73,6 +73,12 @@
 <a href="day_23.py">
   <img src=".aoc_tiles/tiles/2024/23.png" width="161px">
 </a>
+<a href="day_24.py">
+  <img src=".aoc_tiles/tiles/2024/24.png" width="161px">
+</a>
+<a href="day_25.py">
+  <img src=".aoc_tiles/tiles/2024/25.png" width="161px">
+</a>
 <!-- AOC TILES END -->
 
 <hr>
@@ -102,6 +108,8 @@ Day 21: took me a while to figure out what to cache and how to do it properly.
 Day 22: I should check for other solutions because it takes too long to run (5sec for part 1, 20sec for part 2). Fine to get stars during the busy days, but it could surely be done more efficiently.
 
 I was disappointed with day 23 part 1 because it runs in almost 2sec. But part 2 cheered me up as I solved it fairly quickly and has a nice runtime.
+
+Kind of disappointed I couldn't finish day 24 within the day. But they say I'm not supposed to spend the whole time on my computer for Christmas Eve XD.
 
 <hr>
 
