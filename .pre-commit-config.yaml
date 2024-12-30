@@ -5,6 +5,4 @@ repos:
           - id: aoc-tiles
             args:
                 - --contrast-improvement-type=dark
-                # - --show-total-stars-for-all-years=no
-                # - --overwrite-year=2024
                 - --count-as-solved-when=on_leaderboard
