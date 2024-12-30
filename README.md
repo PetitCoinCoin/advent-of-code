@@ -7,3 +7,5 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 [2017](2017/leaderboard.md)
 
 [2018](2018/leaderboard.md)
+
+[2023](2023/leaderboard.md)
