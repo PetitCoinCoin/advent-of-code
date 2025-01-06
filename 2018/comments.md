@@ -7,3 +7,5 @@ Initial solution for day 5 ran in about 25sec, and I got both stars with it. I w
 I knew while implementing day 9 that naive approach with list would not get me the 2nd star. Indeed! I knew it was a data structure issue, but failed to see what was needed here. Quick look on subreddit to discover Linked list. Nice trick! Glad I learnt this. Moreover I thought "omg, I need to implement a new class!" but it turned out easy!
 
 Day 10 was fun! I love that in order to get the solution, it's not only about math or code.
+
+Day 11 made me discover partial sum.

@@ -198,7 +198,7 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 <a href="2018/day_10.py">
   <img src=".aoc_tiles/tiles/2018/10.png" width="161px">
 </a>
-<a href="None">
+<a href="2018/day_11.py">
   <img src=".aoc_tiles/tiles/2018/11.png" width="161px">
 </a>
 <h1 align="center">
