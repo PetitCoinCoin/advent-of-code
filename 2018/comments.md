@@ -11,3 +11,5 @@ Day 10 was fun! I love that in order to get the solution, it's not only about ma
 Day 11 made me discover partial sum.
 
 Day 14 part 2 takes a bit long (almost 20sec) but it runs. And gives the right answer. As it is still reasonable, I'll leave it that way.
+
+I thought my approach would not very efficient, but it is reasonable, and I'm glad I handled it with objects. It runs in about 0.33/1.33sec for part 1/2.
