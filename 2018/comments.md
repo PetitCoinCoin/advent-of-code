@@ -9,3 +9,5 @@ I knew while implementing day 9 that naive approach with list would not get me t
 Day 10 was fun! I love that in order to get the solution, it's not only about math or code.
 
 Day 11 made me discover partial sum.
+
+Day 14 part 2 takes a bit long (almost 20sec) but it runs. And gives the right answer. As it is still reasonable, I'll leave it that way.
