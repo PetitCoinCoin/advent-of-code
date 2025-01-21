@@ -15,3 +15,5 @@ Day 14 part 2 takes a bit long (almost 20sec) but it runs. And gives the right a
 I thought my approach would not very efficient, but it is reasonable, and I'm glad I handled it with objects. It runs in about 0.33/1.33sec for part 1/2.
 
 Oh my gelkjcfe. Let's quickly forget about day 17, move on, and never touch this awful code again. This will never - ever - ever be refactored. Never.
+
+Day 19, I finally understood one of those. It took me some time to figure out the loops, but I did :) Fun one.
