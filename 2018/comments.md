@@ -17,3 +17,5 @@ I thought my approach would not very efficient, but it is reasonable, and I'm gl
 Oh my gelkjcfe. Let's quickly forget about day 17, move on, and never touch this awful code again. This will never - ever - ever be refactored. Never.
 
 Day 19, I finally understood one of those. It took me some time to figure out the loops, but I did :) Fun one.
+
+Had to get some hint for day 20. But I'm still amazed how fast deque is.
