@@ -19,3 +19,5 @@ Oh my gelkjcfe. Let's quickly forget about day 17, move on, and never touch this
 Day 19, I finally understood one of those. It took me some time to figure out the loops, but I did :) Fun one.
 
 Had to get some hint for day 20. But I'm still amazed how fast deque is.
+
+First iteration for day 22 part 2 ran in about 35sec because I calculated an arbitrary large map. I went down to ~10sec, which is long, but that'll do.
