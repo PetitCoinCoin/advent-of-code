@@ -1,3 +1,7 @@
 *.txt
 .aoc_tiles/*
 !.aoc_tiles/tiles/
+
+# python
+.python-version
+venv
