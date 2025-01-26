@@ -23,3 +23,5 @@ Had to get some hint for day 20. But I'm still amazed how fast deque is.
 First iteration for day 22 part 2 ran in about 35sec because I calculated an arbitrary large map. I went down to ~10sec, which is long, but that'll do.
 
 Couldn't have done day 23 part 2 without [this answer](https://www.reddit.com/r/adventofcode/comments/a8s17l/comment/ecdqzdg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button). Nevertheless, I didn't understand the `max(0, dist - r)` so I changed that. Not very happy with myself on this, but at least I'm glad I managed to twist another solution.
+
+For day 24 part 2, I found boost value manually. I thought I would code it with a simple while loop, but for some reason, fight just get stucks at a certain point. It took me long enough to find the correct solution, so I'll leave it as it is.
