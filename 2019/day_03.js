@@ -2,6 +2,7 @@ import fs from 'fs';
 import { basename } from 'path';
 import { argv } from 'process';
 
+console.time('run');
 let [wire1, wire2] = parseInput();
 const delta = {
 	'R': [1, 0],
@@ -24,6 +25,7 @@ switch (argv[2]) {
 	default:
 		throw 'Please set a part to solve (1 or 2)';
 }
+console.timeEnd('run');
 
 function readInput() {
 	const inputFilename = `inputs/${basename(import.meta.url, '.js')}.txt`;
