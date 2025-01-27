@@ -2,6 +2,7 @@ import argparse
 
 from collections import Counter
 from heapq import heappop, heappush
+from pathlib import Path
 from math import inf
 
 def _parse_args() -> argparse.Namespace:
@@ -16,8 +17,6 @@ def _parse_args() -> argparse.Namespace:
     if not args.part:
         parser.error("Which part are you solving?")
     return args
-
-FAVORITE = 1358
 
 def is_open_space(x: int, y: int) -> bool:
     return not(bool(Counter(bin(x *x + 3 * x + 2 * x *y + y + y * y + FAVORITE))["1"] % 2))
@@ -59,6 +58,8 @@ def bfs(max_step: int) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        FAVORITE = int(file.read().strip())
     if args.part == 1:
         print(dijsktra(31, 39))
     else:

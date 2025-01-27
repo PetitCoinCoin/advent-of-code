@@ -1,5 +1,7 @@
 import argparse
 
+from pathlib import Path
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -13,7 +15,6 @@ def _parse_args() -> argparse.Namespace:
         parser.error("Which part are you solving?")
     return args
 
-INPUT = "vbqugkhl"
 HASH_SIZE = 256
 GRID_SIZE = 128
 
@@ -84,6 +85,8 @@ def get_regions(linked: dict, start: tuple) -> list:
 
 if __name__ == "__main__":
     args = _parse_args()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        INPUT = file.read().strip()
     data = []
     for i in range(GRID_SIZE):
         row_data = [ord(x) for x in f"{INPUT}-{i}"] + [17, 31, 73, 47, 23]

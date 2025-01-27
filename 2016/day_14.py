@@ -2,6 +2,7 @@ import argparse
 
 from collections import deque
 from hashlib import md5
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -60,4 +61,6 @@ def get_index( part_one: bool) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        SALT = file.read().strip()
     print(get_index(args.part == 1))

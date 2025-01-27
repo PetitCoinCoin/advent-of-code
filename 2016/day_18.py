@@ -1,4 +1,5 @@
 import argparse
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -12,8 +13,6 @@ def _parse_args() -> argparse.Namespace:
     if not args.part:
         parser.error("Which part are you solving?")
     return args
-
-FIRST_ROW = "^^.^..^.....^..^..^^...^^.^....^^^.^.^^....^.^^^...^^^^.^^^^.^..^^^^.^^.^.^.^.^.^^...^^..^^^..^.^^^^"
 
 def is_trap(tiles: list) -> bool:
     if sum(tiles) == 1 and (tiles[0] or tiles[-1]):
@@ -36,6 +35,8 @@ def get_traps(tiles: list) -> list:
 
 if __name__ == "__main__":
     args = _parse_args()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        FIRST_ROW = file.read().strip()
     if args.part == 1:
         ROW_COUNT = 40
     else:

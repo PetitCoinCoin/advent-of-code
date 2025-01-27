@@ -1,6 +1,7 @@
 import argparse
 
 from copy import deepcopy
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -22,6 +23,10 @@ SPELLS_DATA = {
     (173, "Poison"): {"damage": 3, "timer": 6},
     (229, "Recharge"): {"mana": 101, "timer": 5},
 }
+
+def parse_input(raw: str) -> tuple:
+    hp, damage = raw.split("\n")
+    return int(hp.split(": ")[-1]), int(damage.split(":")[-1])
 
 class Spell:
     def __init__(self, spell: tuple):
@@ -45,8 +50,8 @@ class Game:
     def __init__(self) -> None:
         self.hits = 50
         self.mana = 500
-        self.boss_hits = 51
-        self.boss_damage = 9
+        self.boss_hits = HP
+        self.boss_damage = DAMAGE
         self.active_spells = set()
         self.total = 0
         self.result = None
@@ -132,4 +137,6 @@ def play(game: Game, min_mana: int, hard_mode: bool) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     min_mana = 1000000
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        HP, DAMAGE = parse_input(file.read().strip())
     print(play(Game(), min_mana, args.part == 2))

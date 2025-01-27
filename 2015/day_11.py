@@ -1,6 +1,6 @@
 import argparse
 
-from itertools import groupby
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -49,7 +49,8 @@ def is_valid(pwd: str) -> bool:
 
 if __name__ == "__main__":
     args = _parse_args()
-    data = "hxbxwxba"
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = file.read().strip()
     while not is_valid(data):
         data = increment(data)
     if args.part == 1:

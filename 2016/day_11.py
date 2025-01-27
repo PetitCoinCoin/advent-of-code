@@ -2,6 +2,7 @@ import argparse
 
 from copy import deepcopy
 from itertools import combinations
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -16,12 +17,17 @@ def _parse_args() -> argparse.Namespace:
         parser.error("Which part are you solving?")
     return args
 
-DATA = {
-    1: ["cG", "cM", "poG", "prG", "rG", "rM", "tG", "tM"],
-    2: ["poM", "prM"],
-    3: [],
-    4: [],
-}
+def parse_input(raw: str) -> None:
+    for i, floor in enumerate(raw.split("\n")):
+        interest = floor.split("contains ")[-1]
+        if interest.startswith("nothing"):
+            DATA[i + 1] = []
+            continue
+        interest = interest.replace("and", ",")
+        items = [item.strip()[2:].split(" ") for item in interest.split(", ") if item.strip()]
+        DATA[i + 1] = [item[0][:2] + item[1][0].upper() for item in items]
+        DATA[i + 1].sort()
+
 
 def is_valid_together(combination: tuple, all_elements: list) -> bool:
     microchip = [c for c in combination if c[-1] == "M"]
@@ -87,6 +93,9 @@ def move_bfs() -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
+    DATA = {}
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        parse_input(file.read().strip())
     if args.part == 2:
         DATA[1] = DATA[1] + ["eM", "eG", "dM", "dG"]
         DATA[1].sort()

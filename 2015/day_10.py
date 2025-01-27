@@ -1,6 +1,7 @@
 import argparse
 
 from itertools import groupby
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -23,7 +24,8 @@ def look_and_say(number: str) -> str:
 
 if __name__ == "__main__":
     args = _parse_args()
-    data = "3113322113"
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = file.read().strip()
     if args.part == 1:
         steps = 40
     else:

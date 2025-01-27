@@ -1,4 +1,5 @@
 import argparse
+import re
 
 from pathlib import Path
 from time import time
@@ -15,9 +16,6 @@ def _parse_args() -> argparse.Namespace:
     if not args.part:
         parser.error("Which part are you solving?")
     return args
-
-PLAYERS = 455
-MAX_MARBLE = 71223
 
 class Node:
     def __init__(self, value: int) -> None:
@@ -68,6 +66,8 @@ def play() -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        PLAYERS, MAX_MARBLE = map(int, re.findall(r"(\d+)", file.read()))
     if args.part == 2:
         MAX_MARBLE *= 100
     print(play())

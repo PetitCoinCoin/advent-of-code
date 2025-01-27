@@ -1,5 +1,6 @@
 import argparse
 import math
+import re
 
 from dataclasses import dataclass
 from pathlib import Path
@@ -44,8 +45,13 @@ def get_margins(race: Race) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        times, distances = [
+            map(int, re.findall(r"(\d+)", raw))
+            for raw in file.read().strip().split("\n")
+        ]
     if args.part == 1:
-        races = [Race(41, 249), Race(77, 1362), Race(70, 1127), Race(96, 1011)]
+        races = [Race(dt, d) for dt, d in zip(times, distances)]
         margins = [get_margins(race) for race in races]
         result = 1
         for margin in margins:

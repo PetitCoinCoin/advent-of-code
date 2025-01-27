@@ -1,5 +1,7 @@
 import argparse
 
+from pathlib import Path
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -25,7 +27,8 @@ def get_checksum(raw:str) -> str:
 
 if __name__ == "__main__":
     args = _parse_args()
-    data = "10001001100000001"
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = file.read().strip()
     if args.part == 1:
         dragon_length = 272
     else:

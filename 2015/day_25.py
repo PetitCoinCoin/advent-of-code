@@ -1,4 +1,5 @@
 import argparse
+import re
 
 from pathlib import Path
 
@@ -29,7 +30,10 @@ def fill_diagonal(code: int, row: int, col: int) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
+    pattern = r"row (\d+), column (\d+)"
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = map(int ,re.findall(pattern, file.read())[0])
     if args.part == 1:
-        print(fill_diagonal(20151125, 2947, 3029))
+        print(fill_diagonal(20151125, *data))
     else:
         raise NotImplementedError

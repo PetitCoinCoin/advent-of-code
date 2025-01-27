@@ -47,11 +47,16 @@ STATE_MAP = {
         "next_state": lambda x: "A" if x else "E", 
     },
 }
-STEPS = 12656374
+
+def parse_input(raw: str) -> tuple:
+    settings = raw.split("\n\n")[0].split("\n")
+    return int(settings[-1].split(" ")[-2]), settings[0][-2]
 
 if __name__ == "__main__":
     args = _parse_args()
-    state = "A"
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        STEPS, START = parse_input(file.read().strip())
+    state = START
     tape = dict()
     i = 0
     cursor = 0

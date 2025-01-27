@@ -1,8 +1,7 @@
 import argparse
 import math
 
-
-VALUE = 265149
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -78,6 +77,8 @@ def walk() -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        VALUE = int(file.read().strip())
     if args.part == 1:
         print(find_distance(VALUE))
     else:

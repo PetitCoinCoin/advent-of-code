@@ -1,5 +1,7 @@
 import argparse
 
+from pathlib import Path
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -25,7 +27,8 @@ def count_presents(house: int, amount: int, limit: int = 0) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    data = 34000000
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = int(file.read().strip())
     i = 1
     if args.part == 1:
         while count_presents(i, 10) < data:

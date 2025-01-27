@@ -1,6 +1,7 @@
 import argparse
 
 from hashlib import md5
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -17,7 +18,8 @@ def _parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     args = _parse_args()
-    data = "uqwqemis"
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = file.read().strip()
     index = 0
     code = [""] * 8
     while len([c for c in code if c]) < 8:

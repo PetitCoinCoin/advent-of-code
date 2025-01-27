@@ -2,6 +2,7 @@ import argparse
 
 from collections import deque
 from hashlib import md5
+from pathlib import Path
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -17,7 +18,6 @@ def _parse_args() -> argparse.Namespace:
     return args
 
 DOORS_DELTA = [("U", (0, -1)),  ("D", (0, 1)), ("L", (-1, 0)), ("R", (1, 0))]
-PASSCODE = "qzthpkfp"
 
 def find_next(position: tuple, passcode: str) -> list:
     doors = [
@@ -51,7 +51,9 @@ def bfs(part_one: bool = True) -> str:
 
 if __name__ == "__main__":
     args = _parse_args()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        PASSCODE = file.read().strip()
     if args.part == 1:
-        print(bfs())
+        print(bfs()[len(PASSCODE):])
     else:
         print(len(bfs(False)) - len(PASSCODE))

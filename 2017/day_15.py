@@ -1,5 +1,6 @@
 import argparse
 
+from pathlib import Path
 from time import time
 
 def _parse_args() -> argparse.Namespace:
@@ -15,8 +16,6 @@ def _parse_args() -> argparse.Namespace:
         parser.error("Which part are you solving?")
     return args
 
-START_A = 634
-START_B = 301
 FACTOR_A = 16807
 FACTOR_B = 48271
 DIV = 2147483647
@@ -38,6 +37,8 @@ def to_short_bin(val: int) -> str:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
+    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        START_A, START_B = [int(line.split(" ")[-1]) for line in file.read().strip().split("\n")]
     start_a = START_A
     start_b = START_B
     loop = 40 if args.part == 1 else 5
