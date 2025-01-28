@@ -60,7 +60,7 @@ function run(i, arr) {
 }
 
 function intCode(arr) {
-	for (let i=0; i<data.length; i+=4) {
+	for (let i=0; i<arr.length; i+=4) {
 		if (run(i, arr)) {
 			break
 		}
