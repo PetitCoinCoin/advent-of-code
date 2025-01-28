@@ -21,6 +21,7 @@ function readInput() {
 	return fs
 		.readFileSync(inputFilename)
 		.toString()
+		.trim()
 }
 
 function parseInput() {
