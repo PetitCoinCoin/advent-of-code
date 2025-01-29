@@ -3,3 +3,5 @@
 Since I'll soon start a new job mainly using javascript, I thought I would do this year in js. Lezgooo.
 
 After day 1 & 2 it's funny to see how I would have solved this in no time in python, and how I suffer with simple tasks in js!
+
+Day 7 feels kind of shady, but I'm not sure this is because of the language. Maybe I wouldn't have found a cleaner solution in python. Nevertheless, it's quick (and not so dirty)!
