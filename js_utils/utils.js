@@ -22,4 +22,8 @@ const permute = (permutation) => {
 	return result;
 }
 
-export { permute };
+const range = (startRange, endRange, step = 1) => {
+	return Array.from({length: endRange - startRange}, (_, i) => i * step + startRange)
+}
+
+export { permute, range };
