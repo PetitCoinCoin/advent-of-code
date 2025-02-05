@@ -30,6 +30,10 @@ const manhattan = (p1, p2) => {
 	return Math.abs(p1.x - p2.x) + Math.abs(p1.y - p2.y)
 }
 
+const gcd = (a, b) => b == 0 ? a : gcd (b, a % b)
+const lcm = (a, b) =>  a / gcd (a, b) * b
+const lcmAll = (ns) => ns.reduce (lcm, 1)
+
 const Point = class Point {
 	constructor(x, y) {
 		this.x = x;
@@ -41,4 +45,4 @@ const Point = class Point {
 	}
 }
 
-export { manhattan, permute, range, Point };
+export { gcd, lcm, lcmAll, manhattan, permute, range, Point };

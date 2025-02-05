@@ -11,3 +11,5 @@ I know I've said it already, but I really love puzzles which require to render s
 It took me so much time to get a valid intcode computer for day 9 part 1 that I was surprised part 2 ran that easily. Mainly comprehension issue and stupid mistakes!
 
 Day 10 part 2 took me longer than expected since I lost myself in sorting functions.
+
+Day 12 part 2 is obviously suboptimal because it takes few minutes. Sure it's reasonable (~4min30), so it will stay that way, but still...
