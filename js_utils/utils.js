@@ -26,4 +26,19 @@ const range = (startRange, endRange, step = 1) => {
 	return Array.from({length: endRange - startRange}, (_, i) => i * step + startRange)
 }
 
-export { permute, range };
+const manhattan = (p1, p2) => {
+	return Math.abs(p1.x - p2.x) + Math.abs(p1.y - p2.y)
+}
+
+const Point = class Point {
+	constructor(x, y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	getNeighbours() {
+		return [[0, 1], [0, -1], [1, 0], [-1, 0]].map(([dx, dy]) => Point(this.x + dx, this.y + dy))
+	}
+}
+
+export { manhattan, permute, range, Point };
