@@ -23,7 +23,7 @@ const permute = (permutation) => {
 }
 
 const range = (startRange, endRange, step = 1) => {
-	return Array.from({length: endRange - startRange}, (_, i) => i * step + startRange)
+	return Array.from({length: Math.abs(endRange - startRange)}, (_, i) => i * step + startRange)
 }
 
 const manhattan = (p1, p2) => {
