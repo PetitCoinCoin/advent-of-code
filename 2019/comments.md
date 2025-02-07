@@ -13,3 +13,5 @@ It took me so much time to get a valid intcode computer for day 9 part 1 that I 
 Day 10 part 2 took me longer than expected since I lost myself in sorting functions.
 
 Day 12 part 2 is obviously suboptimal because it takes few minutes. Sure it's reasonable (~4min30), so it will stay that way, but still...
+
+Day 13 part 2 took me sooooo much time. It was mainly comprehesion issues, implementation was easy (once you have a working Intcode, which I already had).
