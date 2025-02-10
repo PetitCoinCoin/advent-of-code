@@ -15,3 +15,5 @@ Day 10 part 2 took me longer than expected since I lost myself in sorting functi
 Day 12 part 2 is obviously suboptimal because it takes few minutes. Sure it's reasonable (~4min30), so it will stay that way, but still...
 
 Day 13 part 2 took me sooooo much time. It was mainly comprehesion issues, implementation was easy (once you have a working Intcode, which I already had).
+
+First time I implement a binary search (day 14 part 2) and I'm amazed how quickly it runs.
