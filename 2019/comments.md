@@ -17,3 +17,5 @@ Day 12 part 2 is obviously suboptimal because it takes few minutes. Sure it's re
 Day 13 part 2 took me sooooo much time. It was mainly comprehesion issues, implementation was easy (once you have a working Intcode, which I already had).
 
 First time I implement a binary search (day 14 part 2) and I'm amazed how quickly it runs.
+
+Once again, I had comprehension issues, this time for day 17 part 2. Well I also made a silly mistake and reverse printed the map, so my path was obviously wrong...
