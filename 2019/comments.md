@@ -19,3 +19,5 @@ Day 13 part 2 took me sooooo much time. It was mainly comprehesion issues, imple
 First time I implement a binary search (day 14 part 2) and I'm amazed how quickly it runs.
 
 Once again, I had comprehension issues, this time for day 17 part 2. Well I also made a silly mistake and reverse printed the map, so my path was obviously wrong...
+
+Oh my. More than 3min for day 18 part 1. It's ugly but that we'll do. First attempt on part 2 just ran for ever. Thanks to someone's hint on reddit, I used the fact that all quadrants could be handled independently. We do not need to keep track of the order of the robots. So if a robot is blocked at a door and the key is not in this quadrant, it's just like the door does not exist. Much easier and allows the code to run with minimal changes in about 100ms.

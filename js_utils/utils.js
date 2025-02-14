@@ -34,6 +34,9 @@ const gcd = (a, b) => b == 0 ? a : gcd (b, a % b)
 const lcm = (a, b) =>  a / gcd (a, b) * b
 const lcmAll = (ns) => ns.reduce (lcm, 1)
 
+const isLower = (c) => c.toLowerCase() === c && c.toUpperCase() !== c;
+const isUpper = (c) => c.toLowerCase() !== c && c.toUpperCase() === c;
+
 const Point = class Point {
 	constructor(x, y) {
 		this.x = x;
@@ -45,4 +48,4 @@ const Point = class Point {
 	}
 }
 
-export { gcd, lcm, lcmAll, manhattan, permute, range, Point };
+export { gcd, isLower, isUpper, lcm, lcmAll, manhattan, permute, range, Point };
