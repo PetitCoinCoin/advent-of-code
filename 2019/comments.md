@@ -23,3 +23,5 @@ Once again, I had comprehension issues, this time for day 17 part 2. Well I also
 Oh my. More than 3min for day 18 part 1. It's ugly but that we'll do. First attempt on part 2 just ran for ever. Thanks to someone's hint on reddit, I used the fact that all quadrants could be handled independently. We do not need to keep track of the order of the robots. So if a robot is blocked at a door and the key is not in this quadrant, it's just like the door does not exist. Much easier and allows the code to run with minimal changes in about 100ms.
 
 I had a nice solution for day 19 part 2, only with integer. But I guess at some point in the beam a slope varied a little, and I got some offset. I found the correct solution by visualising the beam in the predefined area, but wanted something more programatic. So I went for the full calculation of the slopes, but I'm not very happy with it. The '0.5' seems a little bit too arbitrary (even if it makes sense!)
+
+I'm truly amazed byt the construction of day 21 puzzle, but I did not like it. I don't really know why but, still.
