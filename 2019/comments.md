@@ -27,3 +27,5 @@ I had a nice solution for day 19 part 2, only with integer. But I guess at some 
 I'm truly amazed byt the construction of day 21 puzzle, but I did not like it. I don't really know why but, still.
 
 Oh my. Day 22 part 2 was just impossible. It has been so hard, I had to look for more than hints. It kind of felt like cheating, but afterall, this year was all about improving my JS skills and learning new stuff with this language. And I did, so I guess that still counts.
+
+I don't know how I did to confuse myself that much for part 1. Then I was surprised how my first implementation for part 2 gave the correct answer XD
