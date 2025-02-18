@@ -25,3 +25,5 @@ Oh my. More than 3min for day 18 part 1. It's ugly but that we'll do. First atte
 I had a nice solution for day 19 part 2, only with integer. But I guess at some point in the beam a slope varied a little, and I got some offset. I found the correct solution by visualising the beam in the predefined area, but wanted something more programatic. So I went for the full calculation of the slopes, but I'm not very happy with it. The '0.5' seems a little bit too arbitrary (even if it makes sense!)
 
 I'm truly amazed byt the construction of day 21 puzzle, but I did not like it. I don't really know why but, still.
+
+Oh my. Day 22 part 2 was just impossible. It has been so hard, I had to look for more than hints. It kind of felt like cheating, but afterall, this year was all about improving my JS skills and learning new stuff with this language. And I did, so I guess that still counts.
