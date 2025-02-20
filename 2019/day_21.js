@@ -2,14 +2,9 @@ import fs from 'fs';
 import { basename } from 'path';
 import { argv } from 'process';
 
-import { range } from '../js_utils/utils.js';
-
 console.time('run');
 let data = parseInput();
 let relativeBase = 0;
-let grid = {};
-let x = 0;
-let y = 0;
 let output = '';
 let inputs;
 let damages = 0;
@@ -133,22 +128,5 @@ function intCode() {
 			return
 		}
 		i += step
-	}
-}
-
-function pprint() {
-	let minX = Infinity;
-	let minY = Infinity;
-	let maxX = 0;
-	let maxY = 0;
-	for (const pos of Object.keys(grid)) {
-		const [x, y] = pos.split(',').map(Number);
-		minX = Math.min(minX, x);
-		minY = Math.min(minY, y);
-		maxX = Math.max(maxX, x);
-		maxY = Math.max(maxY, y);
-	}
-	for (const y of range(minY - 1, maxY + 2)) {
-		console.log(range(minX - 1, maxX + 2).map(x => grid[[x, y]]).join('') + y);
 	}
 }
