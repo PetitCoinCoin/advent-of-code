@@ -31,3 +31,5 @@ Oh my. Day 22 part 2 was just impossible. It has been so hard, I had to look for
 I don't know how I did to confuse myself that much for part 1. Then I was surprised how my first implementation for part 2 gave the correct answer XD
 
 Day 24 part 2 is not recursive at all, but that works fine :)
+
+Solved day 25 manually. I still don't know if I liked this one or not. It felt like too much work to do it programmatically, but just trying all possibilities manually (with method!) wasn't really fun. The discovery of the map and the various traps was funny though.
