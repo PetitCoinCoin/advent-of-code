@@ -565,12 +565,13 @@ Comments for each year:
 - [2017](2017/comments.md)
 - [2018](2018/comments.md)
 - [2019](2019/comments.md)
+- [2020](2020/comments.md)
 - [2023](2023/comments.md)
 - [2024](2024/comments.md)
 
 To see code evolution:
 
-2023 > 2015 > 2016 > 2017 > 2024 > 2018 > 2019
+2023 > 2015 > 2016 > 2017 > 2024 > 2018 > 2019 > 2020
 <hr>
 
 Tiles by [LiquidFun](https://github.com/LiquidFun/aoc_tiles)
