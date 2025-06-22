@@ -12,9 +12,9 @@ I was afraid that it would take forever for Day 8 with permutations, but it runs
 
 Day 9: like day 7, poor choice of data structure (str instead of list) lead to wrong answer and lots of time wasted! Probably not optimal as part 2 runs in about 5sec, but that will do. Edit: optimised with early breaking, now runs in about a sec.
 
-Day 11: Thought I was clever using a linked list, except that it doesn't make any sense here. A shower later, my thought were in place and used a simple and wey more efficient approach.
+Day 11: Thought I was clever using a linked list, except that it doesn't make any sense here. A shower later, my thought were in place and used a simple and way more efficient approach.
 
-Day 14 part 2 was a mess. Tried to look for a global symmetrical pattern, didn't work. Then I looked for a frame, but again, I thought there would be no more noise left, so I didn't get it write. I had an upper bound (by submitting random answers) so I just printed all grids and looked at them... to find a tree after 140k sec, which was too high. But at least, I knew what I was searching for, so it was easier to implement something.
+Day 14 part 2 was a mess. Tried to look for a global symmetrical pattern, didn't work. Then I looked for a frame, but again, I thought there would be no more noise left, so I didn't get it right. I had an upper bound (by submitting random answers) so I just printed all grids and looked at them... to find a tree after 140k sec, which was too high. But at least, I knew what I was searching for, so it was easier to implement something.
 
 Day 16 part 2 could be better. But it took me a while and runs in about 10sec, so that's it for me today!
 
