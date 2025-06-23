@@ -9,3 +9,7 @@ I'm so happy I understood what was happening under the hood for day 5. I'm alway
 I didn't expect the bruteforce approach to work for day 9...
 
 Day 11 is the starting day of increased runtimes \o/ (3~4sec)
+
+CRT spotted for day 13! But the example was so unclear to me!
+
+Once again, the difficulty here was more to understand what was expected. For part 2, it took me a while to understand that mask application changed (0 is not enforced anymore).
