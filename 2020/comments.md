@@ -13,3 +13,7 @@ Day 11 is the starting day of increased runtimes \o/ (3~4sec)
 CRT spotted for day 13! But the example was so unclear to me!
 
 Once again, the difficulty here was more to understand what was expected. For part 2, it took me a while to understand that mask application changed (0 is not enforced anymore).
+
+I knew Day 15 part 2 would be this kind of evolution. I expected a faster runtime (~15sec), but looking at reddit, it appears that I'm not the only one having such time.
+
+Out of curiosity I looked at reddit for day 16 and realized I've got lucky: I didn't have any '0' invalid field. I would have been stuck for a loooong time in part 2!
