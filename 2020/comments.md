@@ -17,3 +17,7 @@ Once again, the difficulty here was more to understand what was expected. For pa
 I knew Day 15 part 2 would be this kind of evolution. I expected a faster runtime (~15sec), but looking at reddit, it appears that I'm not the only one having such time.
 
 Out of curiosity I looked at reddit for day 16 and realized I've got lucky: I didn't have any '0' invalid field. I would have been stuck for a loooong time in part 2!
+
+I thought I was being clever for using recursion in day 18 but `maximum recursion depth exceeded` got me!
+
+Day 19 was fun! Also I'm kinda disappointed we had a hint directly in the puzzle. I'm sure it would have taken me way more time without it. But I also would have liked to see if I gained experience on this and if the idea of checking my input occured to me. Anyway, liked it! Also, tried to cache, but it had no impact for part 1 (which ran in about 0.7sec). I refactored part 1, based on part 2, and it now runs in ~2ms (both parts).
