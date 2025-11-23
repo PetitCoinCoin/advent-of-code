@@ -73,7 +73,7 @@ def is_valid(passport: dict) -> bool:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(raw) for raw in file.read().strip().split("\n\n")]
     data_with_required = [passport for passport in data if has_all_required(passport)]
     if args.part == 1:

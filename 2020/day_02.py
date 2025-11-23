@@ -42,7 +42,7 @@ def parse_input(raw) -> Pwd:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(raw) for raw in file.readlines()]
     if args.part == 1:
         print(len([p for p in data if p.is_valid]))

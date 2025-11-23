@@ -43,7 +43,7 @@ if __name__ == "__main__":
     t = time()
     data = dict()
     all_ingredients = dict()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         parse_input(file.read().strip())
     ingredients_probably_with_allergen = set()
     for ingredients in data.values():

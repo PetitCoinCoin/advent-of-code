@@ -42,7 +42,7 @@ def parse_input(raw: str) -> Instruction:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         instructions = [parse_input(raw) for raw in file.readlines()]
     # Lines 20 and 21 from input file do the trick here
     print(factorial(7 if args.part == 1 else 12) + int(instructions[19].val) * int(instructions[20].val))

@@ -24,7 +24,7 @@ def is_valid_anagram(passhrase: list) -> bool:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [row.split(" ") for row in file.read().split("\n")]
     if args.part == 1:
         print(sum(is_valid_identical(phrase) for phrase in data))

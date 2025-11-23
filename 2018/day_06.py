@@ -37,7 +37,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     data = dict()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         coordinate = 1
         max_real, max_imag = 0, 0
         while line:= file.readline().strip():

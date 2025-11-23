@@ -62,7 +62,7 @@ def linear_evaluation(expr: str, *, is_advanced: bool) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().strip().split("\n")
     print(sum(linear_evaluation(expr, is_advanced=args.part == 2) for expr in data))
     print(time() - t)

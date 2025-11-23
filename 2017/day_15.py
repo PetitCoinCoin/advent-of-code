@@ -37,7 +37,7 @@ def to_short_bin(val: int) -> str:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         START_A, START_B = [int(line.split(" ")[-1]) for line in file.read().strip().split("\n")]
     start_a = START_A
     start_b = START_B

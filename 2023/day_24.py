@@ -58,7 +58,7 @@ def get_intesections(data: list, min_th: int, max_th: int) -> list:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [calculate_trajectory(row) for row in  file.read().splitlines()]
     if args.part == 1:
         print(len(get_intesections(data, 200000000000000, 400000000000000)))

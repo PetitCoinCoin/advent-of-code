@@ -67,7 +67,7 @@ def focusing_power(lenses: list, box: int) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().split(",")
     if args.part == 1:
         print(sum([hash_sequence(sequence) for sequence in data]))

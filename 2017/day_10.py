@@ -37,12 +37,12 @@ def hash_round(lengths: list, elements: list, current: int, skip: int) -> tuple[
 if __name__ == "__main__":
     args = _parse_args()
     if args.part == 1:
-        with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
             data = [int(x.strip()) for x in file.read().split(",")]
         items, _, _ = hash_round(data, list(range(SIZE)), 0, 0)
         print(items[0] * items[1])
     else:
-        with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
             data = [ord(x) for x in file.read()] + [17, 31, 73, 47, 23]
         items = list(range(SIZE))
         current = 0

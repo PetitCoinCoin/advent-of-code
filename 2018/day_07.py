@@ -91,7 +91,7 @@ if __name__ == "__main__":
     t = time()
     liberates = dict()
     blocked_by = dict()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line:=file.readline():
             first, last = parse_input(line)
             liberates[first] = liberates.get(first, []) + [last]

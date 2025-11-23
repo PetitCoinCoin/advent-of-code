@@ -31,6 +31,6 @@ def walk_through(data: list, part_one: bool) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [int(val) for val in file.readlines()]
     print(walk_through(data, args.part == 1))

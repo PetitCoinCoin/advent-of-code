@@ -19,7 +19,7 @@ def _parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [int(x) for x in file.read().strip().split(",")]
     numbers = {val: i + 1 for i, val in enumerate(data)}
     total_round = 2020 if args.part == 1 else 30000000

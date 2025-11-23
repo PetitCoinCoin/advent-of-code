@@ -2,7 +2,7 @@ import argparse
 
 from dataclasses import dataclass
 from pathlib import Path
-from time import time, sleep
+from time import time
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -109,7 +109,7 @@ def pprint(robots: list[Robot]) -> None:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(line.strip()) for line in file.readlines()]
     if args.part == 1:
         move(data, 100)

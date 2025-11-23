@@ -44,7 +44,7 @@ if __name__ == "__main__":
     t = time()
     rules = {}
     data = []
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         is_rule = True
         while line := file.readline():
             if line == "\n":

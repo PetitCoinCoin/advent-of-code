@@ -33,7 +33,7 @@ def is_valid() -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         recipes_count = int(file.read())
     data = [3, 7]
     elf_1, elf_2 = 0, 1

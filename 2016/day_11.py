@@ -94,7 +94,7 @@ def move_bfs() -> int:
 if __name__ == "__main__":
     args = _parse_args()
     DATA = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         parse_input(file.read().strip())
     if args.part == 2:
         DATA[1] = DATA[1] + ["eM", "eG", "dM", "dG"]

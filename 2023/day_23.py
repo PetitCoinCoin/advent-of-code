@@ -123,7 +123,7 @@ def longest_path(step: tuple, destination: tuple, edges: dict, distance: int = 0
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().split()
     if args.part == 1:
         start = (0, 1)

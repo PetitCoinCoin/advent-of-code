@@ -35,7 +35,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     data = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         for x in file.read().split():
             data[int(x)] = 1
     loops = 25 if args.part == 1 else 75

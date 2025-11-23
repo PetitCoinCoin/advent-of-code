@@ -130,7 +130,7 @@ if __name__ == "__main__":
     t = time()
     data = []
     func = annotate_hand_1 if args.part == 1 else annotate_hand_2
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line := file.readline():
             data.append(func(line))
     data.sort()

@@ -55,7 +55,7 @@ def get_positions(reindeer: Reindeer, duration: int) -> list:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(raw) for raw in file.read().split("\n")]
     race_duration = 2503
     if args.part == 1:

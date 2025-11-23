@@ -46,7 +46,7 @@ if __name__ == "__main__":
     t = time()
     data = {}
     mem = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         parse_input(file.read().strip())
     if args.part == 1:
         for mask, instructions in data.items():

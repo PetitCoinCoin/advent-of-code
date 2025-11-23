@@ -320,7 +320,7 @@ if __name__ == "__main__":
     x_const = {}
     y_const = {}
     data = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         [parse_input(raw) for raw in file.read().split("\n") if raw]
     y_max = max(y[0] for y in y_const.keys())
     y_min = min(key[1] for key in data.keys())

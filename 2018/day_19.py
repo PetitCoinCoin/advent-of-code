@@ -66,7 +66,7 @@ def run() -> None:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         raw_data = file.read().split("\n")
     ipr = int(raw_data[0][4:])
     data = [parse_input(line) for line in raw_data[1:] if line]

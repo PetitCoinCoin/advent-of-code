@@ -59,7 +59,7 @@ if __name__ == "__main__":
     args = _parse_args()
     data = dict()
     start_components = []
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line := file.readline():
             elements = tuple(int(x) for x in line.strip().split("/"))
             data[elements] = sum(elements)

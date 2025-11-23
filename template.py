@@ -1,26 +1,13 @@
-import argparse
-
 from pathlib import Path
 from time import time
 
-def _parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--part", "-p",
-        type=int,
-        choices={1, 2},
-        help="Set puzzle part"
-    )
-    args = parser.parse_args()
-    if not args.part:
-        parser.error("Which part are you solving?")
-    return args
+from py_utils.parsers import parse_args
 
 if __name__ == "__main__":
-    args = _parse_args()
+    args = parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
-        data = file.read().strip()
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
+        data = file.read().strip().split("\n")
     if args.part == 1:
         print(data)
     else:

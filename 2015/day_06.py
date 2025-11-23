@@ -61,7 +61,7 @@ def follow_instructions(lights: dict, instructions: list, action_map: dict) -> N
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_instructions(row) for row in file.read().split("\n")]
     if args.part == 1:
         lights = build_grid(-1)

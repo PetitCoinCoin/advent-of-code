@@ -43,6 +43,6 @@ def get_length(raw: str, part_one: bool = True) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read()
     print(get_length(data, args.part == 1))

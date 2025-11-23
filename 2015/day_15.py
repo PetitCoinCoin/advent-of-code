@@ -54,7 +54,7 @@ def bruteforce(data: list, limit_calories: int = 0):
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(row) for row in file.read().split("\n")]
     if args.part == 1:
         bruteforce(data)

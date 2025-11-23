@@ -57,7 +57,7 @@ def get_mapping() -> dict:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         input_rules, input_my, input_nearby = tuple(file.read().strip().split("\n\n"))
     rules = parse_rules(input_rules)
     my_ticket = [int(x) for x in input_my.split("\n")[-1].split(",")]

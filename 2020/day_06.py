@@ -25,7 +25,7 @@ def intersect_yes(group: list) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [[x for x in group.split("\n")] for group in file.read().strip().split("\n\n")]
     if args.part == 1:
         print(sum(len({char for item in group for char in item}) for group in data))

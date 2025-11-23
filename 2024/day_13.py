@@ -59,7 +59,7 @@ def solve(m: Machine, *, is_part_two: bool) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(lines, is_part_two=args.part == 2) for lines in file.read().split("\n\n")]
     print(sum(solve(m, is_part_two= args.part == 2) for m in data))
     print(time() - t)

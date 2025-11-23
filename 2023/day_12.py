@@ -51,7 +51,7 @@ def get_arrangements_2(springs: str, operationals: tuple) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().split()
     if args.part == 1:
         arrangements = [get_arrangements(data[i], [int(x) for x in data[i + 1].split(",")]) for i in range(0, len(data), 2)]

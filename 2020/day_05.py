@@ -25,7 +25,7 @@ def seat_id(raw: str) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().strip().split("\n")
     seat_ids = {seat_id(seat) for seat in data}
     if args.part == 1:

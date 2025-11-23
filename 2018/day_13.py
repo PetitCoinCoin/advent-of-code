@@ -139,7 +139,7 @@ if __name__ == "__main__":
     t = time()
     tracks = {}
     carts = []
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         for r, raw in enumerate(file.readlines()):
             parse_input(r, raw)
     if args.part == 1:

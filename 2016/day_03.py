@@ -36,7 +36,7 @@ def is_vertically_possible(rows: list) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.readlines()
     if args.part == 1:
         print(sum([is_possible(raw) for raw in data]))

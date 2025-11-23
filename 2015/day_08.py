@@ -26,7 +26,7 @@ def diff_encoded(string: str) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().split()
     if args.part == 1:
         print(sum([diff_memory(d) for d in data]))

@@ -57,7 +57,7 @@ def pretty_print(grid: dict, min_x: int, max_x:int, min_y: int, max_y: int) -> N
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(line) for line in file.read().split("\n")]
     delay = find_delay()
     if args.part == 1:

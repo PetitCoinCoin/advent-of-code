@@ -53,7 +53,7 @@ if __name__ == "__main__":
     for r in range(R_SIZE):
         for c in range(C_SIZE):
             data[(r, c)] = False
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line := file.readline():
             data = operate(line, data)
     if args.part == 1:

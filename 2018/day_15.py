@@ -152,7 +152,7 @@ if __name__ == "__main__":
         elves=0,
         part=args.part,
     )
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         for y, raw in enumerate(file.read().split("\n")):
             for x, char in enumerate(raw):
                 if char in "GE":

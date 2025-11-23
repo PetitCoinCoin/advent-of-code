@@ -36,7 +36,7 @@ if __name__ == "__main__":
     t = time()
     i = 0
     data = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line := file.readline():
             for r, char in enumerate(line.strip()):
                 if char != ".":

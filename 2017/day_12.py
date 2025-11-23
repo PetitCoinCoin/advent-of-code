@@ -38,7 +38,7 @@ def get_linked(pipes: dict, start: str) -> list:
 if __name__ == "__main__":
     args = _parse_args()
     data = dict()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line := file.readline():
             key, value = parse_input(line)
             data[key] = value

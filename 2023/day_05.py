@@ -30,7 +30,7 @@ def get_input(*, is_part_two: bool) -> tuple:
     light_to_temperature = {}
     temperature_to_humidity = {}
     humidity_to_location = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         current_map = None
         while line := file.readline():
             # would be better with a switch, but I'm in 3.9

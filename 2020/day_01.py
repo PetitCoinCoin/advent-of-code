@@ -29,7 +29,7 @@ def check_three_expenses() -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = {int(x) for x in file.read().strip().split("\n")}
     if args.part == 1:
         suspicious_1, suspicious_2 = check_two_expenses()

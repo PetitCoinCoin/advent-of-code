@@ -96,7 +96,7 @@ def parse_input(data: list) -> Game:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         game = parse_input(file.read().strip().split("\n\n"))
     if args.part == 1:
         game.play()

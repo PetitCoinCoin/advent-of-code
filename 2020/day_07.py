@@ -47,7 +47,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     data = {}
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         parse_input(file.read().strip())
     if args.part == 1:
         has_target = {}

@@ -27,7 +27,7 @@ def count_presents(house: int, amount: int, limit: int = 0) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = int(file.read().strip())
     i = 1
     if args.part == 1:

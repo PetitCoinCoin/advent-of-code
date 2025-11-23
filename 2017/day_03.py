@@ -77,7 +77,7 @@ def walk() -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         VALUE = int(file.read().strip())
     if args.part == 1:
         print(find_distance(VALUE))

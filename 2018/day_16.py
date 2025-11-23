@@ -118,7 +118,7 @@ def cleaning() -> None:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         samples, test_program = file.read().split("\n\n\n\n")
         samples = [parse_input(raw) for raw in samples.split("\n\n")]
         test_program = [parse_program(raw) for raw in test_program.split("\n") if raw]

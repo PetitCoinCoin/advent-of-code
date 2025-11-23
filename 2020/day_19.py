@@ -83,7 +83,7 @@ def validate_42_31(item: str, mul: int = 8, *, with_loop: bool = False) -> bool:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         rules_input, data_input = tuple(file.read().strip().split("\n\n"))
     data = data_input.split("\n")
     max_length = max(len(item) for item in data)

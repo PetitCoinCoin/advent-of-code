@@ -29,7 +29,7 @@ def find_sum(item: any, ignore_red: bool = False) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read()
     if args.part == 1:
         print(find_sum(json.loads(data)))

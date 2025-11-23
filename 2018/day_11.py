@@ -24,7 +24,7 @@ def power_level(x: int, y: int) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         sn = int(file.read())
     data = {
         (x, y): power_level(x, y)

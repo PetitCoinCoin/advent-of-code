@@ -22,7 +22,7 @@ if __name__ == "__main__":
     args = _parse_args()
     min_range = []
     max_range = []
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         idx = 0
         while line := file.readline():
             heappush(min_range, (int(line.split("-")[0]), idx))

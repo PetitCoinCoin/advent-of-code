@@ -52,7 +52,7 @@ def get_metadata(notes: deque, *, is_part_two: bool = False) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = deque(int(x) for x in file.read().split(" "))
     print(get_metadata(data, is_part_two=args.part == 2))
     print(time() - t)

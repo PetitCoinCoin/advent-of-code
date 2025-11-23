@@ -99,7 +99,7 @@ def iterate_moves(code: str, loop: int = 0) -> set:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().split("\n")
     print(sum(
         int(code[:-1]) * iterate_moves(code, 2 if args.part == 1 else 25)

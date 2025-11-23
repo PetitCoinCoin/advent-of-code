@@ -137,6 +137,6 @@ def play(game: Game, min_mana: int, hard_mode: bool) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     min_mana = 1000000
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         HP, DAMAGE = parse_input(file.read().strip())
     print(play(Game(), min_mana, args.part == 2))

@@ -69,6 +69,6 @@ def process(instructions: list, part_one: bool) -> int:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         instructions = [parse_input(raw) for raw in file.readlines()]
     print(process(instructions, args.part == 1))

@@ -96,7 +96,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     func = format_input if args.part == 1 else format_input_2
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [func(row) for row in file.read().splitlines()]
     if args.part == 1:
         start = Cubicle(0, 0, "#", "")

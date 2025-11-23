@@ -45,7 +45,7 @@ def get_margins(race: Race) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         times, distances = [
             map(int, re.findall(r"(\d+)", raw))
             for raw in file.read().strip().split("\n")

@@ -40,7 +40,7 @@ if __name__ == "__main__":
     args = _parse_args()
     vertices = set()
     edges = dict()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         while line := file.readline():
             get_graph(vertices, edges, line)
     if args.part == 1:

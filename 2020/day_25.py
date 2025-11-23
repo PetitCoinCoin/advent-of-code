@@ -30,7 +30,7 @@ def get_loop_size(pk: int) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         card_pk, door_pk = tuple(int(x) for x in file.read().strip().split("\n"))
     if args.part == 1:
         card_loop_size = get_loop_size(card_pk)

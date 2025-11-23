@@ -61,7 +61,7 @@ def generation() -> None:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         pots, instructions = parse_input(file.read())
     if args.part == 1:
         for _ in range(20):

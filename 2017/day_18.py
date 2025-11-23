@@ -97,7 +97,7 @@ def sync_exchange(instructions: list, i: int, register: dict, reg_queue: deque, 
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(line) for line in file.read().split("\n")]
     idx_0 = 0
     register_0 = {"is_waiting": False, "p": 0, "sent": 0}

@@ -145,7 +145,7 @@ if __name__ == "__main__":
         "immune": [],  # data["immune"] contains "infection" groups
         "infection": [],
     }
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         parse_input(file.read())
     damages = 1
     if args.part == 1:

@@ -53,7 +53,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     pattern = r"pos=<(\-?\d+),(\-?\d+),(\-?\d+)>, r=(\-?\d+)"
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [Nano(*map(int, parsed)) for parsed in re.findall(pattern, file.read())]
     if args.part == 1:
         strongest_radius = max(nano.r for nano in data)

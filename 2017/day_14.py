@@ -85,7 +85,7 @@ def get_regions(linked: dict, start: tuple) -> list:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         INPUT = file.read().strip()
     data = []
     for i in range(GRID_SIZE):

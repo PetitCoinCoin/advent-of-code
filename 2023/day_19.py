@@ -127,7 +127,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     if args.part == 1:
-        with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
             is_workflow = True
             workflows = {}
             ratings = []
@@ -146,7 +146,7 @@ if __name__ == "__main__":
         ]
         print(sum([sum(rating.values()) for rating in accepted]))
     else:
-        with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
             workflows = {}
             while line := file.readline():
                 if line.strip():

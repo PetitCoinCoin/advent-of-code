@@ -44,7 +44,7 @@ def pretty(node: Node) -> str:
 
 if __name__ == "__main__":
     args = _parse_args()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [parse_input(raw) for raw in file.readlines() if raw.startswith("/dev")]
     if args.part == 1:
         viables = 0

@@ -44,7 +44,7 @@ def count_arrangements(pattern: str, done: str = "") -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         tow, pat = file.read().strip().split("\n\n")
     towels = [x.strip() for x in tow.split(", ")]
     towels.sort()

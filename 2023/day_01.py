@@ -38,7 +38,7 @@ def digitize(value: str, *, is_part_two: bool = False) -> int:
 if __name__ == "__main__":
     args = _parse_args()
     t = time()
-    with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+    with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = file.read().split()
     calibrations_values = [digitize(value, is_part_two=args.part == 2) for value in data]
     print(sum(calibrations_values))

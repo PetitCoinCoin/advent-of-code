@@ -79,7 +79,7 @@ if __name__ == "__main__":
     args = _parse_args()
     t = time()
     if args.part == 1:
-        with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
             data = file.read().split()
         start, plots = build_plots(data)
         i = 1
@@ -92,7 +92,7 @@ if __name__ == "__main__":
             i += 1
         print(len(children))
     else:
-        with Path(f"inputs/{Path(__file__).stem}.txt").open("r") as file:
+        with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
             data = [[x for x in row]for row in file.read().splitlines()]
         sr, sc = get_start(data)
         start = Node(r=sr, c=sc, parent=None)
