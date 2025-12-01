@@ -7,8 +7,14 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 400/500 ⭐
+  Advent of Code - 402/502 ⭐
 </h1>
+<h1 align="center">
+  2025 - 2 ⭐ - Python
+</h1>
+<a href="2025/day_01.py">
+  <img src=".aoc_tiles/tiles/2025/01.png" width="161px">
+</a>
 <h1 align="center">
   2024 - 50 ⭐ - Python
 </h1>
@@ -639,7 +645,7 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 
 To see code evolution, and comments for each year:
 
-[2023](2023/comments.md) > [2015](2015/comments.md) > [2016](2016/comments.md) > [2017](2017/comments.md) > [2024](2024/comments.md) > [2018](2018/comments.md) > [2019](2019/comments.md) > [2020](2020/comments.md)
+[2023](2023/comments.md) > [2015](2015/comments.md) > [2016](2016/comments.md) > [2017](2017/comments.md) > [2024](2024/comments.md) > [2018](2018/comments.md) > [2019](2019/comments.md) > [2020](2020/comments.md) > [2025](2025/comments.md)
 <hr>
 
 Tiles by [LiquidFun](https://github.com/LiquidFun/aoc_tiles)
