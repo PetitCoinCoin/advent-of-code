@@ -1,12 +1,12 @@
 #!/bin/sh
 
-SESSION_COOKIE=`cat .aoc_tiles/session.cookie`
+SESSION_COOKIE=`cat ./.aoc_tiles/session.cookie`
 BASE_URL=https://adventofcode.com
 
 
 help() {
     cat << EOF
-    Usage: Get input from AOC for day of year (default to today)
+    Usage: Get input from AOC for day of year (default to today). Create code file from template. Open files in VSCode.
     Used in a cron with '0 6 1-12 12 *'
 
     Options:
@@ -35,7 +35,6 @@ FILENAME="day_$(printf "%02d" $DAY)"
 INPUT_DESTDIR="./${YEAR}/inputs/${FILENAME}.txt"
 CODE_DESTDIR="./${YEAR}/${FILENAME}.${LANGUAGE}"
 
-if [ ! -s "${INPUT_DESTDIR}" ]; then touch "${INPUT_DESTDIR}"; fi
 if [ ! -s "${CODE_DESTDIR}" ]
   then
     if [ -e ./template.${LANGUAGE} ]
@@ -44,5 +43,10 @@ if [ ! -s "${CODE_DESTDIR}" ]
     fi
 fi
 
+if [ ! -s "${INPUT_DESTDIR}" ]; then touch "${INPUT_DESTDIR}"; fi
+
 RESP=`curl ${URL} -H "Cookie: session=${SESSION_COOKIE}"`
 echo "${RESP}" > "${INPUT_DESTDIR}"
+
+code "${CODE_DESTDIR}"
+code "${INPUT_DESTDIR}"
