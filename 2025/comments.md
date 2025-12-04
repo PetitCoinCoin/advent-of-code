@@ -5,3 +5,5 @@ Wow. Day 1 part 2 gave me way too much trouble. I had to tick 1 by 1 to finally 
 Day 2 is really unefficient, even for part 1 (I had a solution in ~0.7sec but decided to group part 1 and 2 in the same function - don't know why I like it when both parts can work with the same logic).
 
 Day 3 was fun. I knew in part 1 that there should be better than bruteforce, but went for it anyway. Well, I had to think this through in part 2 XD.
+
+Day 4 part 2 can probably be optimized (it runs in ~0.5 sec). But I got to use my new helpers, and I can use part 1 for part 2 with clean code, so I'm happy :)
