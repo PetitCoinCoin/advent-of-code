@@ -13,11 +13,12 @@ def get_all_valid(item: range, *, part_two: bool = False) -> int:
     for _id in item:
         str_id = str(_id)
         len_id = len(str_id)
-        for i in range(1, len_id) if part_two else (len_id // 2,):
+        for i in range(len_id // 2, 0, -1) if part_two else (len_id // 2,):
             if (part_two and len_id % i) or (not part_two and len_id %  2):
                 continue
-            if len(set(("".join(sub) for sub in batched(str_id, i)))) == 1:
+            if len(set(batched(str_id, i))) == 1:
                 invalid_ids.add(_id)
+                break
     return sum(invalid_ids)
 
 if __name__ == "__main__":
