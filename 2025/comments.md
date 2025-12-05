@@ -8,3 +8,5 @@ Edit: reworked this day a little and went from ~7.5sec to ~4.5sec for part 2. I 
 Day 3 was fun. I knew in part 1 that there should be better than bruteforce, but went for it anyway. Well, I had to think this through in part 2 XD.
 
 Day 4 part 2 can probably be optimized (it runs in ~0.5 sec). But I got to use my new helpers, and I can use part 1 for part 2 with clean code, so I'm happy :)
+
+Meh. Poor choice of DS for day 5 part 1, and then, I struggled with the merge of the ranges. At least it's efficient.
