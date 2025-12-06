@@ -10,3 +10,5 @@ Day 3 was fun. I knew in part 1 that there should be better than bruteforce, but
 Day 4 part 2 can probably be optimized (it runs in ~0.5 sec). But I got to use my new helpers, and I can use part 1 for part 2 with clean code, so I'm happy :)
 
 Meh. Poor choice of DS for day 5 part 1, and then, I struggled with the merge of the ranges. At least it's efficient.
+
+Late to the party for day 5. It wasn't so difficult, but it was fun to manipulate the data.
