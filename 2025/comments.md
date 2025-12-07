@@ -11,4 +11,6 @@ Day 4 part 2 can probably be optimized (it runs in ~0.5 sec). But I got to use m
 
 Meh. Poor choice of DS for day 5 part 1, and then, I struggled with the merge of the ranges. At least it's efficient.
 
-Late to the party for day 5. It wasn't so difficult, but it was fun to manipulate the data.
+Late to the party for day 6. It wasn't so difficult, but it was fun to manipulate the data.
+
+Day 7 part 1 is a bit less efficient once grouped with part 2 (one could only use set, and give up the timelines dict for part 1) but that's alright.
