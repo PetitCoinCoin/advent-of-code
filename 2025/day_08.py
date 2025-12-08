@@ -16,49 +16,45 @@ def get_pairs() -> list:
         for pos1, pos2 in combinations(data, 2)
     ]
 
-def build_circuits() -> list:
+def build_circuits(count: int = 0) -> list:
     pairs = sorted(get_pairs())
-    pairs = [(pos1, pos2) for _, pos1, pos2 in pairs[:1000]]
-    circuits = [set([pairs[0][0], pairs[0][1]])]
-    for pos1, pos2 in pairs[1:]:
-        for circuit in circuits:
-            if pos1 in circuit or pos2 in circuit:
-                circuit |= {pos1, pos2}
-                break
-        else:
-            circuits.append({pos1, pos2})
-    return circuits
-
-def connect_circuits(circ: list) -> list:
-    prev_len = 0
-    while len(circ) != prev_len:
-        prev_len = len(circ)
-        connected = [circ[0]]
-        for circuit in circ[1:]:
-            for c in connected:
-                if c.intersection(circuit):
-                    c |= circuit
-                    break
-            else:
-                connected.append(circuit)
-        circ = connected
-    return circ
-
-def build_one_circuit() -> list:
-    pairs = sorted(get_pairs())
+    if count:
+        pairs = pairs[:count]
     pairs = [(pos1, pos2) for _, pos1, pos2 in pairs]
-    circuits = [set([pairs[0][0], pairs[0][1]])]
+    circuits = {0: {pairs[0][0], pairs[0][1]}}
+    junction_to_circuit = {
+        pairs[0][0]: 0,
+        pairs[0][1]: 0,
+    }
+    next_circuit = 1
+    max_circuit = 2
     for pos1, pos2 in pairs[1:]:
-        for circuit in circuits:
-            if pos1 in circuit or pos2 in circuit:
-                circuit |= {pos1, pos2}
-                break
+        circuit1 = junction_to_circuit.get(pos1)
+        circuit2 = junction_to_circuit.get(pos2)
+        if circuit1 is None and circuit2 is None:
+            circuits[next_circuit] = {pos1, pos2}
+            junction_to_circuit[pos1] = next_circuit
+            junction_to_circuit[pos2] = next_circuit
+            next_circuit += 1
+        elif circuit1 is None:
+            circuits[circuit2].add(pos1)
+            junction_to_circuit[pos1] = circuit2
+            max_circuit = max(max_circuit, len(circuits[circuit2]))
+        elif circuit2 is None:
+            circuits[circuit1].add(pos2)
+            junction_to_circuit[pos2] = circuit1
+            max_circuit = max(max_circuit, len(circuits[circuit1]))
+        elif circuit1 == circuit2:
+            continue
         else:
-            circuits.append({pos1, pos2})
-        circuits = connect_circuits(circuits)
-        if len(circuits) == 1 and len(circuits[0]) == len(data):
-            return pos1[0] * pos2[0]
-    return 0
+            circuits[circuit1] |= circuits[circuit2]
+            for junction in circuits[circuit2]:
+                junction_to_circuit[junction] = circuit1
+            del circuits[circuit2]
+            max_circuit = max(max_circuit, len(circuits[circuit1]))
+        if not count and max_circuit == len(data):
+            return [pos1, pos2]
+    return circuits.values()
 
 if __name__ == "__main__":
     args = parse_args()
@@ -66,10 +62,10 @@ if __name__ == "__main__":
     with Path(f"{Path(__file__).parent}/inputs/{Path(__file__).stem}.txt").open("r") as file:
         data = [tuple(map(int, line.split(","))) for line in file.read().strip().split("\n")]
     if args.part == 1:
-        circuits = build_circuits()
-        circuits = [len(c) for c in connect_circuits(circuits)]
+        circuits = [len(c) for c in build_circuits(1000)]
         circuits.sort(reverse=True)
         print(prod(circuits[:3]))
     else:
-        print(build_one_circuit())
+        junction1, junction2 = build_circuits()
+        print(junction1[0] * junction2[0])
     print(time() - t)
