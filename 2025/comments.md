@@ -18,3 +18,5 @@ Day 7 part 1 is a bit less efficient once grouped with part 2 (one could only us
 I'm tired of me as I had a really silly mistake for day 8 part 1 (index error instead of using `math.prod`). By the time I fixed that, it was to get ready for the day... then part 2 was quite quick. Well, not the runtime (~4sec) but it's quick enough. I saw nice tricks to optimize the solution, that's interesting! Edit: updated to merge the circuits on the fly. It's way better.
 
 Wow day 9 part 2 wasn't easy. I really need to get some theory about polygons and how to detect if a point is inside it. This one would need some improvement.
+
+Day 10 part 2 took me the whole day, but I'm really happy with it, even though it's really slow (about 20min). I identified systems of equations, and new I already solved such with sympy for 2023, day 24. But I want to only use standard libraries, so I tried to build a solver on my own. Well, I did. It's inefficient, I already see several possible optimizations, but it works! And I got to use `itertools` and discovered `Fraction`! 
