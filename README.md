@@ -7,10 +7,10 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 420/520 ⭐
+  Advent of Code - 422/522 ⭐
 </h1>
 <h1 align="center">
-  2025 - 20 ⭐ - Python
+  2025 - 22 ⭐ - Python
 </h1>
 <a href="2025/day_01.py">
   <img src=".aoc_tiles/tiles/2025/01.png" width="161px">
@@ -41,6 +41,9 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 </a>
 <a href="2025/day_10.py">
   <img src=".aoc_tiles/tiles/2025/10.png" width="161px">
+</a>
+<a href="2025/day_11.py">
+  <img src=".aoc_tiles/tiles/2025/11.png" width="161px">
 </a>
 <h1 align="center">
   2024 - 50 ⭐ - Python
