@@ -20,3 +20,5 @@ I'm tired of me as I had a really silly mistake for day 8 part 1 (index error in
 Wow day 9 part 2 wasn't easy. I really need to get some theory about polygons and how to detect if a point is inside it. This one would need some improvement.
 
 Day 10 part 2 took me the whole day, but I'm really happy with it, even though it's really slow (about 20min). I identified systems of equations, and new I already solved such with sympy for 2023, day 24. But I want to only use standard libraries, so I tried to build a solver on my own. Well, I did. It's inefficient, I already see several possible optimizations, but it works! And I got to use `itertools` and discovered `Fraction`! 
+
+Of course I tried to solve day 12 with a general algorithm. I flipped, rotated, and tried a lot. It did work on the test input, but it already took 5min tu run. So I figured, maybe I could narrow the candidates - which wouldn't work for the example, but that wouldn't be the first time the test is not solved the same way as the real input. It turns out, that was the only thing expected, and I now have my last star ⭐
