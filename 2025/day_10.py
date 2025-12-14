@@ -1,10 +1,8 @@
 import re
 
 from fractions import Fraction
-from itertools import product
 from pathlib import Path
 from time import time
-from typing import Iterable
 
 from py_utils.parsers import parse_args
 
