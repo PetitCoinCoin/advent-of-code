@@ -690,7 +690,7 @@ I participated to my first Advent of code in 2023. I loved it so much I decided 
 
 To see code evolution, and comments for each year:
 
-[2023](2023/comments.md) > [2015](2015/comments.md) > [2016](2016/comments.md) > [2017](2017/comments.md) > [2024](2024/comments.md) > [2018](2018/comments.md) > [2019](2019/comments.md) > [2020](2020/comments.md) > [2025](2025/comments.md)
+[2023](2023/comments.md) > [2015](2015/comments.md) > [2016](2016/comments.md) > [2017](2017/comments.md) > [2024](2024/comments.md) > [2018](2018/comments.md) > [2019](2019/comments.md) > [2020](2020/comments.md) > [2025](2025/comments.md) > [2021](2021/comments.md)
 <hr>
 
 Tiles by [LiquidFun](https://github.com/LiquidFun/aoc_tiles)
