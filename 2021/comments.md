@@ -7,3 +7,5 @@ And it's already taking me forever to cast to int, do a simple for loop or use r
 It's always funny to see how "easy" challenges take me so much time with a new language! But I learnt a lot!
 Day 2 introduced me to OpenStruct and scan.
 Day 3 introduced me to clone, binary and a lot of cast. I don't know if this is the Ruby way though :woman_shrugging:.
+
+Day 4 introduced me to any? and a little bit of Class. I have to take a look at global variables though.
